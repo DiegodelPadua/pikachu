@@ -7,15 +7,82 @@ body{
     background-color: var(--primary-color);
     padding: 70px;
     font-family: Righteous, sans-serif; /*caso ele nao esocntra a fonte ele usará o sansserif*/
+    display: flex;
+    flex-direction: column;
 }
 header{
     /*background-color: aqua;*/
     display: flex;
     align-items: center;
     gap: 16px;
+    
 
 }
 header span{
     font-size: 32px;
     color: var(--secundary-color);
+}
+main{
+    /* background-color: aqua; */
+    flex-grow: 1; /*ele é filho do flex, que esta*/
+    display: flex;
+    flex-direction: column;
+}
+.sombra {
+    font-size: 400px;
+    position: absolute;
+    color: #ffffff55;
+    z-index: -999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-85%);/*esse comando é usado para posicionar um objeto no modo (absolute).*/
+}
+h1{
+    /* background-color: aquamarine; */
+    flex-grow: 1;
+    font-size: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.container{
+    height: 154px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    align-items: flex-end;
+}
+.descricao h2{
+    font-size: 64px;
+    color: var(--secundary-color);
+}
+.descricao p{
+    font-size: 20px;
+    color: var(--secundary-color);
+    width: 500px;
+}
+.container a{
+    width: 400px;
+    height: 100px;
+    background-color: var(--secundary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+}
+.pikachu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+footer{
+    /* background-color: beige; */
+    text-align: center;
+    color: #8E4106;
 }
