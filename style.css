@@ -29,7 +29,7 @@ main{
     flex-direction: column;
 }
 .sombra {
-    font-size: 400px;
+    font-size: 26vw;
     position: absolute;
     color: #ffffff55;
     z-index: -999;
@@ -40,7 +40,7 @@ main{
 h1{
     /* background-color: aquamarine; */
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 22vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,4 +85,35 @@ footer{
     /* background-color: beige; */
     text-align: center;
     color: #8E4106;
+}
+/* tablet */
+@media (max-width: 768px){
+    body{
+        padding: 30px;
+    }
+    .sombra{
+        transform: translate(-50%,-180%);
+    }
+    h1{
+        align-items: start;
+        transform: translateY(7%);
+         /* flex-grow: 0;  */
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+    .descricao{
+        text-align: center;
+    }
+    footer{
+        display: none;
+
+    }
+}
+/* mobile */
+@media (max-width: 480px){
+    
 }
